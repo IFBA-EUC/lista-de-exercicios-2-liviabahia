@@ -1,4 +1,4 @@
-import java.util. Scanner;
+import java.util.Scanner;
 
 public class questao1 {
   public static void main(String args[]) {
@@ -17,7 +17,9 @@ public class questao1 {
     
     if (delta >= 0) {
       o1 = (-b) / (2 * a);
-      System.out.println("A raíz é:" + o1);
+      o2 = b / (2 * a);
+      System.out.println("A raíz positiva é:" + o1);
+      System.out.println("A raíz negativa é: + o2);
    } else if (delta < 0) {
       System.out.println("Não há raízes.");
     }
