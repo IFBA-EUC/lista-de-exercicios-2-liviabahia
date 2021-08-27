@@ -1,0 +1,78 @@
+import java.util.Scanner;
+
+public class questao18{
+  
+    public static void main(String[] args){
+
+        Scanner leitor = new Scanner(System.in);
+
+        String u[]= {" zero ", " um ", " dois ", " três ", " quatro ", " cinco ", " seis ", " sete ", " oito ", " nove "};
+        String d[]= {" zero ", " dez ", " vinte ", " trinta ", " quarenta ", " cinquenta ", " sessenta ", " setenta ", " oitenta ", " noventa "};
+        String c[]= {" zero ", " cem ", " duzentos ", " trezentos ", " quatrocentos ",  " quinhentos ", " seiscentos ", " setecentos ", " oitocentos ", " novecentos "};
+
+        long v, n1, n2, n3, n4, n5, n6, n7, n8, n9;
+
+        do{
+            System.out.printf("Qual o valor que será convertido? ");
+            v = leitor.nextLong();
+            if(v >= 1000000000){
+                System.out.println("Um número menor que 1000000000, por favor ♡!");
+            }
+
+        }while(v > 1000000000);
+
+        n1 = v/100000000;
+        v = v-(n1*100000000);
+        n2 = v/10000000;
+        v = v-(n2*10000000);
+        n3 = v/1000000;
+        v = v-(n3*1000000);
+        n4 = v/100000;
+        v = v-(n4*100000);
+        n5 = v/10000;
+        v = v-(n5*10000);
+        n6 = v/1000;
+        v = v-(n6*1000);
+        n7 = v/100;
+        v = v-(n7*100);
+        n8 = v/10;
+        v = v-(n8*10);
+        n9 = v/1;
+
+        if(n1 != 0 || n2 != 0 ||  n3 != 0){
+            if(n1 != 0){
+                System.out.printf(c[(int) n1]);
+            }
+            if(n2 != 0){
+                System.out.printf(d[(int) n2]);
+            }
+            if(n3 != 0){
+                System.out.printf(u[(int) n3]);
+            }
+            System.out.printf("(milhão) milhões");
+        }
+        if(n4 != 0 || n5 != 0 ||  n6 != 0){
+            if(n4 != 0){
+                System.out.printf(c[(int) n4]);
+            }
+            if(n5 != 0){
+                System.out.printf(d[(int) n5]);
+            }
+            if(n6 != 0){
+                System.out.printf(u[(int) n6]);
+            }
+            System.out.printf("mil");
+        }
+        if(n7 != 0 || n8 != 0 ||  n9 != 0){
+            if(n7 != 0){
+                System.out.printf(c[(int) n7]);
+            }
+            if(n8 != 0){
+                System.out.printf(d[(int) n8]);
+            }
+            if(n9 != 0){
+                System.out.printf(u[(int) n9]);
+            }
+        }      
+    }  
+}
