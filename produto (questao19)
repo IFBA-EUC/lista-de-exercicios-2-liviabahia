@@ -1,0 +1,110 @@
+public class produto {
+  private static String nome;
+  private static String preço;
+  private static int quantidade;
+  
+  public String getNome() {
+    return nome;
+  }
+  public void setNome(String nome) {
+    this.nome = nome;
+  }
+  public String getPreço() {
+    return preço;
+  }
+  public void setPreço(String preço) {
+    this.preço = preço;
+  }
+  public int getQuantidade() {
+    return quantidade;
+  }
+  public void setQuantidade(int quantidade) {
+    this.quantidade = quantidade;
+  }
+  
+  public static void produtos( String nome, String preço ,int quantidade ) {
+    System.out.println("Nome do produto: " +nome+ " Preço do produto: " +preço+ " Quantidade de produto: " +quantidade);
+    nome = nome;
+    preço = preço;
+    quantidade = quantidade;
+  
+  
+        }
+        }
+
+
+  public class supermercado {
+
+
+  public static void main(String[] args) {
+  
+    Scanner leitor = new Scanner (System.in);
+    System.out.println("Gostaria de efetivar um pedido? Sim (1) Não (2)");
+    int m = leitor.nextInt();
+    
+    if (m == 1) {
+    
+      System.out.println("Esses são os produtos disponíveis: ");
+      estoque = new produtosdomercado();
+
+      produto1 = new produto();
+      produto2 = new produto();
+      
+      
+           p1.produtosdisponiveis("1- Limpeza em geral" , "20,00 reais", 01);
+           p2.produtosdisponiveis("2- Seção de bebidas (+18)", "30,00 reais", 02);
+           p3.produtosdisponiveis("3- Higiene pessoal", "40,00 reais", 03);
+           p4.produtosdisponiveis("4- Alimetos", "50,00", 04);
+           p5.produtosdisponiveis("5- Frigorífico e congelados", "60,00", 05);
+           System.out.println("Qual produto você deseja?");
+           int prod = leitor.nextInt();
+           System.out.println("O pedido está sendo concluído...");
+
+          System.out.println("Qual será a forma de pagamento?: ");
+          System.out.println("Cheque: ");
+          System.out.println("Dinheiro: ");
+          System.out.println("Cartão: ");
+          String pag = leitor.next();
+  }
+        else {
+          System.out.println("Não efetivar pedido?");
+        }
+
+        System.out.println("Okay!");
+    
+    
+          }
+    
+    
+          }
+
+            public class pedido {
+          String cliente;
+          int qb;
+          
+          
+          public String getCliente() {
+            return cliente;
+          }
+          public void setCliente(String cliente) {
+            this.cliente = cliente;
+          }
+          public int getQb() {
+            return qb;
+          }
+          public void setQb(int qb) {
+            this.qb = qb;
+          }
+          
+          }
+          public static void pedido(String cliente, qb) {
+          cliente = cliente;
+          qb = qb;
+            
+            System.out.println("Cliente: " +cliente+ "efetivou um pedido com " + qb);
+          }
+        
+          }
+          
+        
+        
