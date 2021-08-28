@@ -1,0 +1,56 @@
+public class contato  {
+  private String nome;
+  private int num;
+  public int contato;
+  
+  String getNome() {
+    return nome;
+  }
+
+  void setNome(String nome) {
+    this.nome = nome;
+  }
+
+
+  int getNumero() {
+    return num;
+  }
+
+  void setNumero(int num) {
+    this.num = num;
+  }
+
+  public void contato(String nome, int num) {
+    this.nome = nome;
+    this.num = num;
+          }
+        public void dados() {
+          System.out.println("Contato:" +this.getNome()+ " : " +this.getNumero());
+        }
+        }
+        
+        
+    public class agenda {
+      public int c1;
+      public int c2;
+      public int c3;
+      public int c4;
+
+      public void main(String[] args) {
+      c1 = new contato("Livia", 992724298);
+      c2 = new contato("Silvio",  92087630);
+      c3 = new contato("João", 90000001);
+      c4 = new contato("Susu", 40028922);
+    
+    c1.exibir();
+    c2.exibir();
+    c3.exibir();
+    c4.exibir();
+    
+
+  }
+
+    }
+    
+    
+     
