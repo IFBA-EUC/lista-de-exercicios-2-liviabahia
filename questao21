@@ -1,0 +1,45 @@
+import java.util.Scanner;
+
+public class livros {
+
+  public static void main(String[] args) {
+    
+    Scanner leitor = new Scanner(System.in);
+    System.out.println("Digite a sua matricula:  ");
+    int matricula = leitor.nextInt();
+    if (matricula == 5) {
+       System.out.println("És Ninja!"); }
+     else if (matricula == 10) {
+       System.out.println("És Neka!"); }
+     else if (matricula == 15) {
+       System.out.println("És Bumi!"); }
+     else {
+       System.out.println("Quem és tu?"); }
+     
+    System.out.println("Bem, o que desejas efetivar hoje?");
+    System.out.println("1- Fazer um empréstimo?");
+    System.out.println("2- Devolucionar algum(ns) livro(s)?");
+    int ac = leitor.nextInt(); 
+        
+    if (ac == 1) {
+    System.out.println("Os livros disponiveis são: " );
+    livro c1 = new livro("Carta de amor aos mortos", 123, "Amanda Campos");
+    livro c2= new livro("Caçador de pipas", 100, "Kaled");
+    livro c3 = new livro("Outrória", 111, "Anna e Vitória"); 
+    
+    c1.exibirLivro();
+    c2.exibirLivro();
+    c3.exibirLivro();
+    c4.exibirLivro();
+    System.out.println("Qual o livro?" );
+    String nome = leitor.next();
+    System.out.println("Você escolheu:" + nome ); }
+    else if (acesso == 2) {
+      System.out.println("Qual o livro? " );
+      int codigolivro = leitor.nextInt();
+      System.out.println("Obrigad@!" ); 
+    }
+    System.out.println("Até mais ♡! ");  
+  }
+  
+}
