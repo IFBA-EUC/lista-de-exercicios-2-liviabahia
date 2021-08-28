@@ -1,0 +1,19 @@
+import java.util.Arrays;
+import java.util.Random;
+
+public class questao13 {
+   public static void main(String args[]) { 
+     int[]v = gerarV(100);
+     System.out.println(Arrays.toString(v));
+     }
+     
+     public static int[] gerarV(int num) {
+     int []v = new int[num];
+     Random g = new Random();
+     
+     for(int l = 0; l < v.length; l++) {
+     v[l] = g.nextInt(100);
+     }
+       return v;
+   }
+ }
